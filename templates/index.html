@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>RomMex Fleet</title>
+</head>
+<body>
+    <h1>Flota RomMex</h1>
+    <table border="1">
+        <tr>
+            <th>Placa</th>
+            <th>KM Actual</th>
+            <th>KM Próximo Mantenimiento</th>
+        </tr>
+        {% for v in vehicles %}
+        <tr>
+            <td>{{ v.placa }}</td>
+            <td>{{ v.km_actual }}</td>
+            <td>{{ v.km_prox_mantencion }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
