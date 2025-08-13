@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+instance/
+.env
+*.db
+uploads/
+rommex_fleet.db
